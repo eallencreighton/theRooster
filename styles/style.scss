@@ -1,0 +1,123 @@
+@import "partials/setup";
+@import "partials/variables";
+@import "partials/header";
+@import "partials/playlist";
+@import "partials/displayCounter";
+body {
+	background-size: cover;
+	background: #f99170;
+	font-family: 'Overlock', cursive;
+	font-size: 18px;
+	color: #1E394D;
+}
+main {
+	width: 50%;
+}
+
+.wrapper {
+	max-width: 1180px;
+	margin: 60px auto;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+.first, .second {
+	margin-bottom:10px;
+	// border-bottom: 3px solid white;
+	color: white;
+	font-size: 31px;
+	text-align: left;
+	display: inline-block;
+
+}
+form {
+	margin: 20px;
+}
+.activityTimes {
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+}
+.activitytime {
+	display: flex;
+	flex-direction: column;
+	margin: 0 20px 20px 20px;
+	input{
+		padding: 5px;
+		border: 2px solid #1E394D;
+		border-radius: 5px;
+	}
+	label {
+		padding: 5px;
+	}
+}
+
+input{
+	padding: 5px
+}
+button, input[type=submit]{
+		border: 2px solid #1E394D;
+		border-radius: 5px;
+		background-color: white;
+		padding: 10px;
+		margin: 20px
+}
+
+
+input[type=checkbox] {
+	margin: 10px;
+	color: white;
+}
+
+
+
+ footer{
+ 	text-align: center;
+ 	color: white;
+ 	margin: 0;
+ 	p {
+ 		margin: 0;
+ 		padding: 0;
+
+ 	}
+ }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	section.activityTimes {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+
+}
+.activitytime {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5px 0;
+	input{
+		padding: 5px;
+		text-align: center;
+		max-width: 150px;
+		margin: 0;
+	}
+	label {
+		margin: 0px;
+		padding: 5px;
+	}
+}
+.second {
+	margin-bottom: 10px;
+}
+
+
+}
+

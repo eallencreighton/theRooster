@@ -1,0 +1,20 @@
+
+.counterDisplay {
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left:0;
+	background:  #1E394D;
+	background-size: 100%;
+	h2, h3 {
+		display: inline-block;
+		font-size: 45px;
+		text-align: center;
+		margin-top: 40px;
+		color: #F9C842;		
+		text-shadow: 3px 3px 3px black;
+	}
+
+}
